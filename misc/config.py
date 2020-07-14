@@ -31,7 +31,7 @@ if os.environ.get("ENV") == 'development':
 else:
     # PROD DB SETTINGS
     DATABASE_NAME = 'moviedb'
-    HOST = "mongodb+srv://root:" + os.environ.get('mongo+password') + "@sharedit.61cic.mongodb.net/moviedb?retryWrites=true&w=majority"
+    HOST = "mongodb+srv://root:" + os.environ.get('mongo_password') + "@sharedit.61cic.mongodb.net/moviedb?retryWrites=true&w=majority"
     ALIAS = 'default'
     USERNAME = 'root'
     PASSWORD = os.environ.get('mongo_password')
